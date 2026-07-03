@@ -10,8 +10,8 @@ export default function Work({ setActivePage }: { setActivePage?: (page: string)
 
   // Cover image paths generated previously
   const categoryCovers = {
-    travel: "public/Travel.jpeg",
-    commercial: "public/Commercial.jpeg",
+    travel: "/Travel.jpeg",
+    commercial: "/Commercial.jpeg",
   };
 
   const handleOpenLightbox = (index: number) => {
@@ -79,7 +79,7 @@ export default function Work({ setActivePage }: { setActivePage?: (page: string)
               >
                 <div className="relative aspect-[4/3] overflow-hidden group">
                   <img
-                    src="public/Travel.jpeg"
+                    src={categoryCovers.Travel}
                     alt="Travel Videos Cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
@@ -115,7 +115,7 @@ export default function Work({ setActivePage }: { setActivePage?: (page: string)
               >
                 <div className="relative aspect-[4/3] overflow-hidden group">
                   <img
-                    src="public/Commercial.jpeg"
+                    src={categoryCovers.commercial}
                     alt="Commercial Videos Cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
