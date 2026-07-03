@@ -114,8 +114,8 @@ export default function Contact({ setActivePage }: { setActivePage?: (page: stri
   };
 
   // Pre-compiled mailto and whatsapp link
-  const mailtoLink = mailto:greenfilm0606@gmail.com?subject=Project Inquiry&body=Hello Yogesh Gowda S R(Green), I would like to work with you on a creative project.;
-  const whatsappLink = https://wa.me/7204130306?text=Hello, I would like to work with you.;
+  const mailtoLink = "mailto:"greenfilm0606@gmail.com?subject=Project Inquiry&body=Hello Yogesh Gowda S R(Green), I would like to work with you on a creative project.";
+  const whatsappLink = "https://wa.me/7204130306?text=Hello, I would like to work with you.";
 
   return (
     <div id="contact-page-section" className="min-h-[85vh] py-12 px-4 md:px-8 max-w-5xl mx-auto relative">
