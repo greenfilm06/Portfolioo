@@ -10,9 +10,8 @@ export default function Work({ setActivePage }: { setActivePage?: (page: string)
 
   // Cover image paths generated previously
   const categoryCovers = {
-    travel: "/src/assets/images/travel_cover_1782800509673.jpg",
-    commercial: "/src/assets/images/commercial_cover_1782800523688.jpg",
-    prewedding: "/src/assets/images/prewedding_cover_1782800546053.jpg",
+    travel: "public/Travel.jpeg",
+    commercial: "public/Commercial.jpeg",
   };
 
   const handleOpenLightbox = (index: number) => {
@@ -67,7 +66,7 @@ export default function Work({ setActivePage }: { setActivePage?: (page: string)
                 My Work
               </h2>
               <p className="text-gray-500 dark:text-zinc-400 mt-3 max-w-xl mx-auto text-sm">
-                A showcase of storytelling through sharp cinematography, editorial travel films, and pristine pre-wedding visuals.
+                 A showcase of storytelling through sharp cinematography, editorial travel films, and pristine pre-wedding visuals.
               </p>
             </div>
 
@@ -80,7 +79,7 @@ export default function Work({ setActivePage }: { setActivePage?: (page: string)
               >
                 <div className="relative aspect-[4/3] overflow-hidden group">
                   <img
-                    src={categoryCovers.travel}
+                    src="public/Travel.jpeg"
                     alt="Travel Videos Cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
@@ -116,7 +115,7 @@ export default function Work({ setActivePage }: { setActivePage?: (page: string)
               >
                 <div className="relative aspect-[4/3] overflow-hidden group">
                   <img
-                    src={categoryCovers.commercial}
+                    src="public/Commercial.jpeg"
                     alt="Commercial Videos Cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
@@ -144,41 +143,6 @@ export default function Work({ setActivePage }: { setActivePage?: (page: string)
                 </div>
               </motion.div>
 
-              {/* Card 3: Pre-Wedding Shoots */}
-              <motion.div
-                id="card-prewedding"
-                whileHover={{ y: -8 }}
-                className="frosted-panel overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden group">
-                  <img
-                    src={categoryCovers.prewedding}
-                    alt="Prewedding Shoots Cover"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80" />
-                  <div className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] uppercase tracking-wider font-mono bg-black/60 text-[#7ED957] font-semibold border border-[#7ED957]/30">
-                    Weddings
-                  </div>
-                </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Pre-Wedding Shoots</h3>
-                    <p className="text-gray-500 dark:text-zinc-400 text-sm leading-relaxed mb-6">
-                      Dreamy pre-wedding love story films, candid photography portraits, and timeless frames capturing deep romance.
-                    </p>
-                  </div>
-                  <button
-                    id="btn-view-prewedding"
-                    onClick={() => setActiveCategory("prewedding")}
-                    className="w-full py-3 bg-zinc-900 hover:bg-[#7ED957] dark:bg-zinc-800 dark:hover:bg-[#7ED957] text-white hover:text-zinc-950 font-bold text-sm tracking-wide rounded-xl transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
-                  >
-                    <span>View Gallery</span>
-                    <Play className="h-4 w-4 fill-current" />
-                  </button>
-                </div>
-              </motion.div>
             </div>
           </motion.div>
         ) : (
