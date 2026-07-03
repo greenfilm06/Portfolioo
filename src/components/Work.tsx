@@ -79,7 +79,7 @@ export default function Work({ setActivePage }: { setActivePage?: (page: string)
               >
                 <div className="relative aspect-[4/3] overflow-hidden group">
                   <img
-                    src={categoryCovers.Travel}
+                    src={categoryCovers.travel}
                     alt="Travel Videos Cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     referrerPolicy="no-referrer"
