@@ -241,13 +241,22 @@ const whatsappLink =
                         <p className="text-xs text-emerald-700/80 dark:text-emerald-350/80 leading-relaxed mb-3">
                           Since the Resend background email delivery service is awaiting configuration in the workspace secrets, you can instantly dispatch these details directly to the artist's mailbox (<strong>greenfilm0606@gmail.com</strong>) with one click below:
                         </p>
-                        <a
-                          id="btn-complete-mailto"
-                          href=mailto:greenfilm0606@gmail.com?subject=New Inquiry from ${encodeURIComponent(lastSubmission.name)}&body=${encodeURIComponent(
-                            `Name: ${lastSubmission.name}\nEmail: ${lastSubmission.email}\nPhone: ${lastSubmission.phone || "Not provided"}\n\nMessage:\n${lastSubmission.message}`
-                          )}`}
-                          className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-zinc-950 hover:text-white text-xs font-black rounded-lg shadow-sm transition-all"
-                        >
+                       <a
+  id="btn-complete-mailto"
+  href={`mailto:greenfilm0606@gmail.com?subject=${encodeURIComponent(
+    `New Inquiry from ${lastSubmission.name}`
+  )}&body=${encodeURIComponent(
+    `Name: ${lastSubmission.name}
+Email: ${lastSubmission.email}
+Phone: ${lastSubmission.phone || "Not provided"}
+
+Message:
+${lastSubmission.message}`
+  )}`}
+  className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-zinc-950 hover:text-white text-xs font-black rounded-lg shadow-sm transition-all"
+>
+  Send Email
+</a>
                           <Send className="h-3 w-3" />
                           <span>Dispatch via Mail App (greenfilm0606@gmail.com)</span>
                         </a>
