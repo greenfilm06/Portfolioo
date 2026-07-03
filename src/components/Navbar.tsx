@@ -56,7 +56,7 @@ export default function Navbar({ activePage, setActivePage, darkMode, setDarkMod
           >
             {portfolioConfig.personalInfo.logo ? (
               <img
-                src={portfolioConfig.personalInfo.logo}
+                src="public/Green.PNG"
                 alt="Photography Logo"
                 className="h-10 w-10 rounded-full object-cover border border-[#7ED957]"
                 referrerPolicy="no-referrer"
@@ -69,7 +69,7 @@ export default function Navbar({ activePage, setActivePage, darkMode, setDarkMod
                 {portfolioConfig.personalInfo.name}
               </span>
               <p className="text-[9px] uppercase tracking-widest text-gray-500 dark:text-gray-400 font-mono -mt-1">
-                Visual Artist
+               
               </p>
             </div>
           </motion.div>
