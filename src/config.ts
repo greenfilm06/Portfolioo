@@ -32,9 +32,9 @@ export interface PortfolioConfig {
 
 export const portfolioConfig: PortfolioConfig = {
   personalInfo: {
-    name: "Yogesh Gowda S R(Green)",
+    name: "Green Film",
     title: "Video Editor & Photographer",
-    subtitle: "Green Films",
+    subtitle: "Green ",
     bio: "I'm a Videographer, Photographer, Cinematographer, Video Editor, and FPV Drone Pilot passionate about cinematic storytelling. I specialize in travel, fashion, food, hospitality, and brand content, creating high-quality visuals from concept to final edit. Skilled in DaVinci Resolve, CapCut, Photoshop, and Lightroom, I focus on delivering creative and impactful content that brings every story to life.",
     profilePicture: "public/Profile.PNG",
     logo: "public/Green.PNG",
