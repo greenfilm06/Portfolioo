@@ -255,7 +255,7 @@ ${lastSubmission.message}`
                           )}`}
                           className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-zinc-950 hover:text-white text-xs font-black rounded-lg shadow-sm transition-all"
                         >
-</a>
+
                           <Send className="h-3 w-3" />
                           <span>Dispatch via Mail App (greenfilm0606@gmail.com)</span>
                         </a>
